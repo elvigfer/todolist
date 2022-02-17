@@ -6,14 +6,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background: rgb(234,229,255);
-background: linear-gradient(90deg, rgba(234,229,255,1) 0%, rgba(238,174,202,1) 51%, rgba(148,187,233,1) 100%);
+background: linear-gradient(90deg, #eae5ff 0%, rgba(238,174,202,1) 51%, rgba(148,187,233,1) 100%);
   }
   
   h1 {
     text-align: center;
-    color: black;
     font-family: 'Josefin Sans';
-    color: gray;
+    color: #404040;
   }
   
   .container {
@@ -25,11 +24,37 @@ background: linear-gradient(90deg, rgba(234,229,255,1) 0%, rgba(238,174,202,1) 5
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+
   }
-  
+  .list{
+    max-height: 15em;
+    overflow: auto;
+  }
+  .list li{
+    height: 35px;
+    padding-top: 13px;
+    padding-left: 10px;
+    background-color: #eae5ff;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    position: relative;
+    color: #404040;
+  }
+
+  .list span{
+    position: absolute;
+    right: 0px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  .list span:hover{
+    color: red;
+  }
   .search {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
     width: 100%;
   }
   
@@ -43,7 +68,37 @@ background: linear-gradient(90deg, rgba(234,229,255,1) 0%, rgba(238,174,202,1) 5
     width: 400px;
   }
   
-  .container2 {
+  .boton{
+    border-radius: 50%;
+    border: none;
+    min-width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(148,187,233,1);
+    cursor: pointer;
+  }
+  .pendientes{
+    color: #404040;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Josefin sans';
+  } 
+
+  .pendientes button{
+    border: none;
+    background-color: #eae5ff;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  /* .container2 {
     background-color: white;
     width: 100%;
     color: darkslategray;
@@ -66,24 +121,4 @@ background: linear-gradient(90deg, rgba(234,229,255,1) 0%, rgba(238,174,202,1) 5
     margin: 0;
     padding: 15px;
     width: 100%;
-  }
-  .boton{
-    border-radius: 50%;
-    border: none;
-    min-width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    background-color: rgba(148,187,233,1);
-    cursor: pointer;
-  }
-  .nopendientes{
-    color: white;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'Josefin sans';
-  }
+  } */
