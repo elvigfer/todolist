@@ -26,11 +26,12 @@ background: linear-gradient(90deg, #eae5ff 0%, rgba(238,174,202,1) 51%, rgba(148
     border-radius: 10px;
 
   }
-  .list{
+  #list{
     max-height: 15em;
     overflow: auto;
+    list-style: none;
   }
-  .list li{
+  #list li{
     height: 35px;
     padding-top: 13px;
     padding-left: 10px;
@@ -41,14 +42,14 @@ background: linear-gradient(90deg, #eae5ff 0%, rgba(238,174,202,1) 51%, rgba(148
     color: #404040;
   }
 
-  .list span{
+  #list span{
     position: absolute;
     right: 0px;
     padding-right: 10px;
     cursor: pointer;
   }
 
-  .list span:hover{
+  #list span:hover{
     color: red;
   }
   .search {
@@ -56,6 +57,7 @@ background: linear-gradient(90deg, #eae5ff 0%, rgba(238,174,202,1) 51%, rgba(148
     margin-right: auto;
     margin-bottom: 15px;
     width: 100%;
+
   }
   
   form {
@@ -79,46 +81,6 @@ background: linear-gradient(90deg, #eae5ff 0%, rgba(238,174,202,1) 51%, rgba(148
     color: white;
     background-color: rgba(148,187,233,1);
     cursor: pointer;
-  }
-  .pendientes{
-    color: #404040;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 50px;
     text-align: center;
-    font-family: 'Josefin sans';
-  } 
-
-  .pendientes button{
-    border: none;
-    background-color: #eae5ff;
-    height: 30px;
-    border-radius: 3px;
-    margin-top: 5px;
-    cursor: pointer;
   }
-
-  /* .container2 {
-    background-color: white;
-    width: 100%;
-    color: darkslategray;
-    margin-top: 20px;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-    background-color: lightgray;
-    border-radius: 10px;
-    margin-top: 15px;
-    display: flex;
-  }
-  
-  li p {
-    margin: 0;
-    padding: 15px;
-    width: 100%;
-  } */
